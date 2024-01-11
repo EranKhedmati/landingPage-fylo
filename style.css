@@ -32,3 +32,32 @@ body {
 .App {
     width: 100%;
 }
+
+/* Navbar */
+.App .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.App .navbar .buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.App .navbar .buttons button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(256, 256, 256, 0.7 );
+    cursor: pointer;
+}
+
+.App .navbar .buttons button:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--white);
+}
