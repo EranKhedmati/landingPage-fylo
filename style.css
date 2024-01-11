@@ -61,3 +61,27 @@ body {
     font-weight: 700;
     color: var(--white);
 }
+
+/* Media Screen */
+@media (max-width: 800px) {
+    .App .navbar {
+        padding: 2rem;
+    }
+    .App .navbar .logo {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .App .navbar {
+        padding: 1.5rem;
+    }
+
+    .App .navbar .logo {
+        width: 5rem;
+    }
+
+    .App .navbar .buttons {
+        gap: 1rem;
+    }
+}
