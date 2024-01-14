@@ -98,6 +98,34 @@ body {
     background: var(--cyan);
 }
 
+/* benefit */
+.App .benefit {
+    width: 100%;
+}
+
+.App .benefit >ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(400px));
+    place-content: center;
+    gap: 4rem;
+    background: var(--dark-blue-bg);
+}
+
+.App .benefit >ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.App .benefit >ul li >img {
+    padding-bottom: 0.5rem;
+    height: 6rem;
+}
+
 /* Media Screen */
 @media (max-width: 1000px) {
      /* Intro */
@@ -120,6 +148,21 @@ body {
     }
     .App .intro img {
         width: 100%;
+    }
+
+    /* Benefit */
+    .App .benefit ul {
+        grid-template-columns: 1fr;
+    }
+
+    .App .benefit >ul li {
+        max-width: none;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .App .benefit >ul >li >p {
+        max-width: 400px;
     }
 }
 
