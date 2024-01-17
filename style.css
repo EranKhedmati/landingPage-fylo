@@ -24,7 +24,7 @@
 body {
     width: 100%; 
     height: 100%;
-    background: var(--dark-blue-secound-bg);
+    background: var(--dark-blue-bg);
     font-size: 14px;
 }
 
@@ -41,6 +41,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+    background-color: var(--dark-blue-secound-bg);
 }
 
 .App .navbar .buttons {
@@ -72,6 +73,7 @@ body {
     text-align: center;
     padding-bottom:20rem;
     background: url("assets/images/bg-curvy-desktop.svg") no-repeat bottom  ;
+    background-color: var(--dark-blue-secound-bg);
     background-size: 100%;
 }
 
@@ -126,7 +128,59 @@ body {
     height: 6rem;
 }
 
+/* Hero */
+.App .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+.App .hero .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    max-width: 450px;
+}
+
+.App .hero .txt h1 {
+    font-size: 2rem;
+}
+
+.App .hero .txt a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cyan);
+    text-decoration: none;
+    color: var(--cyan);
+}
+.App .hero .txt a:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* the path in the svg tag */
+.App .hero .txt a:hover #svg-bg{
+    fill: white;
+}
+
 /* Media Screen */
+@media (max-width: 1100px) {
+    /* Hero */
+    .App .hero {
+        padding: 2rem;
+        padding: 3rem;
+    }
+
+    .App .hero >img {
+        width: 50%;
+    }
+}
+
 @media (max-width: 1000px) {
      /* Intro */
      .App .intro {
@@ -164,6 +218,16 @@ body {
     .App .benefit >ul >li >p {
         max-width: 400px;
     }
+
+    /* Hero */
+    .App .hero {
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+
+    .App .hero >img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -185,6 +249,7 @@ body {
         padding-bottom: 3rem;
         background: url('/assets/images/bg-curvy-mobile.svg')no-repeat bottom ;
         background-size: 100%;
+        background-color: var(--dark-blue-secound-bg);
 
     }
 }
